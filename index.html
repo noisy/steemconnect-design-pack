@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Log in buttons</title>
+        <meta name="author" content="Andrej Cibík @andrejcibik">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" type="text/css">
+        <link rel="stylesheet" href="icon-font/style.css">
+        <style media="screen">
+            body {
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
+                font-family: 'Source Sans Pro', arial, sans-serif;
+            }
+            .wrapper {
+                width: 100%;
+                margin: 60px auto;
+                -webkit-display: flex;
+                display: flex;
+                -webkit-justify-content: center;
+                -webkit-align-items: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container {
+                max-width: 425px;
+                text-align: center;
+                margin: 0 20px;
+            }
+            .container.icons {
+                max-width: 425px;
+                text-align: center;
+                margin: 0 50px;
+            }
+            .login-button {
+                display: inline-block;
+                width: auto;
+                padding: 20px;
+                width: 290px;
+                margin: 10px;
+                color: #fff;
+                font-size: 20px;
+                text-align: left;
+                text-decoration: none;
+                transition: all .3s;
+                cursor: pointer;
+            }
+
+            .login-button.button-steem {
+                background: #4aa1f1;
+            }
+
+            .login-button.button-steem:hover {
+                background: #1283ed;
+            }
+
+            .login-button.button-facebook {
+                background: #2f4479;
+            }
+
+            .login-button.button-facebook:hover {
+                background: #1f2d51;
+            }
+
+            .login-button.button-github {
+                background: #5e2a7f;
+            }
+
+            .login-button.button-github:hover {
+                background: #3c1b50;
+            }
+
+            .login-button.button-twitter {
+                background: #1da1f3;
+            }
+
+            .login-button.button-twitter:hover {
+                background: #0972b3;
+            }
+
+            .login-button.button-google {
+                background: #d84438;
+            }
+
+            .login-button.button-google:hover {
+                background: #aa2b22;
+            }
+            .login-button.monochrome {
+                background: #ffffff;
+                border: 1px solid #000000;
+                color: #000000;
+                width: 180px;
+            }
+            .login-button.monochrome .icon {
+                
+            }
+            .login-button.monochrome:hover {
+                background: #000000;
+                border: 1px solid #ffffff;
+                color: #ffffff;
+                width: 180px;
+            }
+            .login-button.button_standard.monochrome .icon {
+                margin-right: 10px;
+                padding-right: 10px;
+            }
+            .login-button.button_rounded {
+                border-radius: 32px;
+                text-align: center;
+            }
+
+            .login-button .icon {
+                position: relative;
+                top: -3px;
+                padding-right: 20px;
+                vertical-align: text-bottom;
+            }
+            .login-button.icon {
+                width: 20px;
+                margin: 5px;
+            }
+            .login-button.monochrome.icon {
+                width: 20px;
+            }
+            .login-button.icon.icon-facebook::before {
+                position: relative;
+                left: 3px;
+            }
+            .login-button.button_standard .icon {
+                margin-right: 15px;
+                width: 30px;
+                display: inline-block;
+                text-align: center;
+            }
+
+            .login-button.button_standard .icon::after {
+                content: '';
+                position: absolute;
+                top: -10px;
+                bottom: -10px;
+                right: 0;
+                width: 1px;
+                background: rgba(255, 255, 255, .3);
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container icons">
+                <a href="#" class="login-button button_standard button-steem icon icon-steem" title="Log in with SteemConnect"></a>
+                <a href="#" class="login-button button_standard button-facebook icon icon-facebook" title="Log in with Facebook"></a>
+                <a href="#" class="login-button button_standard button-github icon icon-github" title="Log in with GitHub"></a>
+                <a href="#" class="login-button button_standard button-twitter icon icon-twitter" title="Log in with Twitter"></a>
+                <a href="#" class="login-button button_standard button-google icon icon-google" title="Log in with Google"></a>
+            </div>
+
+            <div class="container icons">
+                <a href="#" class="login-button button_standard button-steem monochrome icon icon-steem" title="Log in with SteemConnect"></a>
+                <a href="#" class="login-button button_standard button-facebook monochrome icon icon-facebook" title="Log in with Facebook"></a>
+                <a href="#" class="login-button button_standard button-github monochrome icon icon-github" title="Log in with GitHub"></a>
+                <a href="#" class="login-button button_standard button-twitter monochrome icon icon-twitter" title="Log in with Twitter"></a>
+                <a href="#" class="login-button button_standard button-google monochrome icon icon-google" title="Log in with Google"></a>
+            </div>
+        </div>
+        <div class="wrapper">
+
+            <div class="container">
+
+
+                <a href="#" class="login-button button_standard button-steem" title="Log in with SteemConnect"><span class="icon icon-steem"></span>Log in with SteemConnect</a>
+
+                <a href="#" class="login-button button_standard button-facebook" title="Log in with Facebook"><span class="icon icon-facebook"></span>Log in with Facebook</a>
+
+                <a href="#" class="login-button button_standard button-github" title="Log in with GitHub"><span class="icon icon-github"></span>Log in with GitHub</a>
+
+                <a href="#" class="login-button button_standard button-twitter" title="Log in with Twitter"><span class="icon icon-twitter"></span>Log in with Twitter</a>
+
+                <a href="#" class="login-button button_standard button-google" title="Log in with Google"><span class="icon icon-google"></span>Log in with Google</a>
+
+            </div>
+            <div class="container">
+
+                <a href="#" class="login-button button_standard button-steem monochrome" title="Log in with SteemConnect"><span class="icon icon-steem"></span>SteemConnect</a>
+
+                <a href="#" class="login-button button_standard button-facebook monochrome" title="Log in with Facebook"><span class="icon icon-facebook"></span>Facebook</a>
+
+                <a href="#" class="login-button button_standard button-github monochrome" title="Log in with GitHub"><span class="icon icon-github"></span>GitHub</a>
+
+                <a href="#" class="login-button button_standard button-twitter monochrome" title="Log in with Twitter"><span class="icon icon-twitter"></span>Twitter</a>
+
+                <a href="#" class="login-button button_standard button-google monochrome" title="Log in with Google"><span class="icon icon-google"></span>Google</a>
+            </div>
+
+        </div>
+        <div class="wrapper">
+            <div class="container">
+
+                <a href="#" class="login-button button_rounded button-steem" title="Log in with SteemConnect"><span class="icon icon-steem"></span>Log in with SteemConnect</a>
+
+                <a href="#" class="login-button button_rounded button-facebook" title="Log in with Facebook"><span class="icon icon-facebook"></span>Log in with Facebook</a>
+
+                <a href="#" class="login-button button_rounded button-github" title="Log in with GitHub"><span class="icon icon-github"></span>Log in with GitHub</a>
+
+                <a href="#" class="login-button button_rounded button-twitter" title="Log in with Twitter"><span class="icon icon-twitter"></span>Log in with Twitter</a>
+
+                <a href="#" class="login-button button_rounded button-google" title="Log in with Google"><span class="icon icon-google"></span>Log in with Google</a>
+            </div>
+
+            <div class="container">
+                <a href="#" class="login-button button_rounded button-steem monochrome" title="Log in with SteemConnect"><span class="icon icon-steem"></span>SteemConnect</a>
+
+                <a href="#" class="login-button button_rounded button-facebook monochrome" title="Log in with Facebook"><span class="icon icon-facebook"></span>Facebook</a>
+
+                <a href="#" class="login-button button_rounded button-github monochrome" title="Log in with GitHub"><span class="icon icon-github"></span>GitHub</a>
+
+                <a href="#" class="login-button button_rounded button-twitter monochrome" title="Log in with Twitter"><span class="icon icon-twitter"></span>Twitter</a>
+
+                <a href="#" class="login-button button_rounded button-google monochrome" title="Log in with Google"><span class="icon icon-google"></span>Google</a>
+            </div>
+
+        </div>
+    </body>
+</html>
